@@ -1,0 +1,6 @@
+Inicio
+  var nome: texto
+  escreva ("Informe seu nome")
+  nome = Leia()
+  escreva ("Seu nome é: " & nome)
+Fim
