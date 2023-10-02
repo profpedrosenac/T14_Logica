@@ -85,6 +85,121 @@ insert into produto
 select * from produto
 select * from produto where id_produto = 2
 
+drop table nomeTabela
+
+insert into funcionario 
+(
+	nome_Funcionario,
+	nasc_Funcionario,
+	cpf_Funcionario,
+	logradouro_Funcionario,
+	numero_Funcionario,
+	comp_funcionario,
+	cep_Funcionario,
+	bairro_Funcionario,
+	cidade_Funcionario,
+	uf_Funcionario,
+	telefone1_Funcionario,
+	telefone2_Funcionario,
+	telefone3_Funcionario,
+	telefone4_Funcionario,
+	obs_Funcionario
+) values (
+	'Asdrubal',
+	'2000-07-23',
+	'999.999.999-22',
+	'Rua Bla',
+	235,
+	'',
+	'00011-111',
+	'Residencial Bambi',
+	'Bagulhos',
+	'SP',
+	'(11) 9 9999-9999',
+	'',
+	'',
+	'',
+	''
+)
+
+insert into funcionario 
+(
+	nome_Funcionario,
+	nasc_Funcionario,
+	cpf_Funcionario,
+	logradouro_Funcionario,
+	numero_Funcionario,
+	comp_funcionario,
+	cep_Funcionario,
+	bairro_Funcionario,
+	cidade_Funcionario,
+	uf_Funcionario,
+	telefone1_Funcionario,
+	telefone2_Funcionario,
+	telefone3_Funcionario,
+	telefone4_Funcionario,
+	obs_Funcionario
+) values (
+	'Benegundes',
+	'2000-10-23',
+	'999.999.999-21',
+	'Rua Bla',
+	235,
+	'',
+	'00011-111',
+	'Residencial Bambi',
+	'Bagulhos',
+	'SP',
+	'(11) 9 9999-9998',
+	'',
+	'',
+	'',
+	''
+)
+
+select * from funcionario
+
+delete from funcionario where id_funcionario = 3
 
 
+insert into movimentacao
+(
+	id_Produto_mov,
+	id_funcionario_mov,
+	qtde_mov,
+	tipo_mov,
+	obs_mov
+)values(
+	1,
+	5,
+	50,
+	'Entrada',
+	''
+)
+insert into movimentacao
+(
+	id_Produto_mov,
+	id_funcionario_mov,
+	qtde_mov,
+	tipo_mov,
+	obs_mov
+)values(
+	4,
+	5,
+	250,
+	'Entrada',
+	''
+)
 
+select * from movimentacao
+select * from funcionario
+select * from produto
+
+update funcionario set
+	telefone1_funcionario = '(11) 9 5254-8774',
+    telefone2_funcionario = '(11) 9 5899-9574'
+where id_funcionario = 5
+
+update funcionario set
+	status_funcionario = 'INATIVO'
+where id_funcionario = 5
