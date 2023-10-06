@@ -1,0 +1,17 @@
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\bin\Debug\net6.0-windows\Aula03.exe
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\bin\Debug\net6.0-windows\Aula03.deps.json
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\bin\Debug\net6.0-windows\Aula03.runtimeconfig.json
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\bin\Debug\net6.0-windows\Aula03.dll
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\bin\Debug\net6.0-windows\Aula03.pdb
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.csproj.AssemblyReference.cache
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.frmAula03.resources
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.csproj.GenerateResource.cache
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.AssemblyInfoInputs.cache
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.AssemblyInfo.cs
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.csproj.CoreCompileInputs.cache
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.dll
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\refint\Aula03.dll
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.pdb
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\Aula03.genruntimeconfig.cache
+C:\Users\pedro.lhjunior\source\repos\Aula03\Aula03\obj\Debug\net6.0-windows\ref\Aula03.dll
