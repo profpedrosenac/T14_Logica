@@ -28,29 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.list01 = new System.Windows.Forms.ListBox();
+            this.listItemProdutos = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.cboProduto = new System.Windows.Forms.ComboBox();
+            this.cboProdutoValor = new System.Windows.Forms.ComboBox();
+            this.txtQtde = new System.Windows.Forms.NumericUpDown();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.btoAdd = new System.Windows.Forms.Button();
+            this.btoExcluid = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.txtQtde)).BeginInit();
             this.SuspendLayout();
             // 
-            // list01
+            // listItemProdutos
             // 
-            this.list01.FormattingEnabled = true;
-            this.list01.ItemHeight = 30;
-            this.list01.Items.AddRange(new object[] {
+            this.listItemProdutos.FormattingEnabled = true;
+            this.listItemProdutos.ItemHeight = 30;
+            this.listItemProdutos.Items.AddRange(new object[] {
             "Produto - Qtde - Valor Unitario - Total"});
-            this.list01.Location = new System.Drawing.Point(544, 12);
-            this.list01.Name = "list01";
-            this.list01.Size = new System.Drawing.Size(407, 394);
-            this.list01.TabIndex = 0;
+            this.listItemProdutos.Location = new System.Drawing.Point(544, 12);
+            this.listItemProdutos.Name = "listItemProdutos";
+            this.listItemProdutos.Size = new System.Drawing.Size(407, 394);
+            this.listItemProdutos.TabIndex = 0;
+            this.listItemProdutos.SelectedIndexChanged += new System.EventHandler(this.listItemProdutos_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -79,78 +80,116 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Quantidade";
             // 
-            // comboBox1
+            // cboProduto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 45);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(526, 38);
-            this.comboBox1.TabIndex = 2;
+            this.cboProduto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboProduto.FormattingEnabled = true;
+            this.cboProduto.Items.AddRange(new object[] {
+            "Bala",
+            "Bolacha",
+            "Biscoito",
+            "Ovos",
+            "Chocolate",
+            "Miojo",
+            "Paçoca",
+            "Café",
+            "Guaraná",
+            "Arroz"});
+            this.cboProduto.Location = new System.Drawing.Point(12, 45);
+            this.cboProduto.Name = "cboProduto";
+            this.cboProduto.Size = new System.Drawing.Size(526, 38);
+            this.cboProduto.TabIndex = 0;
+            this.cboProduto.SelectedIndexChanged += new System.EventHandler(this.cboProduto_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cboProdutoValor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(12, 128);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(328, 38);
-            this.comboBox2.TabIndex = 2;
+            this.cboProdutoValor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.cboProdutoValor.Enabled = false;
+            this.cboProdutoValor.FormattingEnabled = true;
+            this.cboProdutoValor.Items.AddRange(new object[] {
+            "R$ 9,33",
+            "R$ 6,07",
+            "R$ 7,58",
+            "R$ 10,24",
+            "R$ 3,09",
+            "R$ 0,18",
+            "R$ 8,25",
+            "R$ 0,48",
+            "R$ 3,97",
+            "R$ 6,74"});
+            this.cboProdutoValor.Location = new System.Drawing.Point(12, 128);
+            this.cboProdutoValor.Name = "cboProdutoValor";
+            this.cboProdutoValor.Size = new System.Drawing.Size(328, 38);
+            this.cboProdutoValor.TabIndex = 1;
             // 
-            // numericUpDown1
+            // txtQtde
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(346, 130);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(192, 36);
-            this.numericUpDown1.TabIndex = 3;
+            this.txtQtde.Location = new System.Drawing.Point(346, 130);
+            this.txtQtde.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtQtde.Name = "txtQtde";
+            this.txtQtde.Size = new System.Drawing.Size(192, 36);
+            this.txtQtde.TabIndex = 2;
+            this.txtQtde.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
-            // label4
+            // lblResult
             // 
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(12, 232);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(526, 174);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "R$ 0,00";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResult.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblResult.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResult.Location = new System.Drawing.Point(12, 232);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(526, 174);
+            this.lblResult.TabIndex = 4;
+            this.lblResult.Text = "R$ 0,00";
+            this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btoAdd
             // 
-            this.button1.Location = new System.Drawing.Point(463, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 57);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "ADD";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btoAdd.Location = new System.Drawing.Point(463, 172);
+            this.btoAdd.Name = "btoAdd";
+            this.btoAdd.Size = new System.Drawing.Size(75, 57);
+            this.btoAdd.TabIndex = 4;
+            this.btoAdd.Text = "ADD";
+            this.btoAdd.UseVisualStyleBackColor = true;
+            this.btoAdd.Click += new System.EventHandler(this.btoAdd_Click);
             // 
-            // button2
+            // btoExcluid
             // 
-            this.button2.Location = new System.Drawing.Point(346, 172);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 57);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Excluir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btoExcluid.Location = new System.Drawing.Point(346, 172);
+            this.btoExcluid.Name = "btoExcluid";
+            this.btoExcluid.Size = new System.Drawing.Size(111, 57);
+            this.btoExcluid.TabIndex = 3;
+            this.btoExcluid.Text = "Excluir";
+            this.btoExcluid.UseVisualStyleBackColor = true;
+            this.btoExcluid.Click += new System.EventHandler(this.btoExcluid_Click);
             // 
             // frmVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(963, 418);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btoExcluid);
+            this.Controls.Add(this.btoAdd);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.txtQtde);
+            this.Controls.Add(this.cboProdutoValor);
+            this.Controls.Add(this.cboProduto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.list01);
+            this.Controls.Add(this.listItemProdutos);
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "frmVendas";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.Text = "Formulário de produtos";
+            ((System.ComponentModel.ISupportInitialize)(this.txtQtde)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,15 +197,15 @@
 
         #endregion
 
-        private ListBox list01;
+        private ListBox listItemProdutos;
         private Label label1;
         private Label label2;
         private Label label3;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private NumericUpDown numericUpDown1;
-        private Label label4;
-        private Button button1;
-        private Button button2;
+        private ComboBox cboProduto;
+        private ComboBox cboProdutoValor;
+        private NumericUpDown txtQtde;
+        private Label lblResult;
+        private Button btoAdd;
+        private Button btoExcluid;
     }
 }
