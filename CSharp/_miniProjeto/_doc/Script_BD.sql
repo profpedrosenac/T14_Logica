@@ -12,9 +12,18 @@ create table usuario
 	status_usuario varchar(20) not null default 'ATIVO' 
 )
 
-insert into usuario 
+insert into usuario
 	(nome_usuario,login_usuario,senha_usuario,obs_usuario)
 values
 	('Administrador','admin','123','Usuário adm padrão')
 
 select * from usuario
+
+insert into usuario
+	(nome_usuario,login_usuario,senha_usuario,obs_usuario)
+values
+	('Judith','juju','123456','vai curinthia')
+
+delete from usuario where id_usuario = 4
+
+update usuario set 	nome_usuario = '',	login_usuario = '',	senha_usuario = '',	obs_usuario = '',	status_usuario = '' where id_usuario = 
