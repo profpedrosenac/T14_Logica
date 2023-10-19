@@ -22,3 +22,5 @@ C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\bin\Debug\net6.0-wi
 C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\obj\Debug\net6.0-windows\MiniProjeto.csproj.CopyComplete
+C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\obj\Debug\net6.0-windows\MiniProjeto.frmProduto.resources
+C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\obj\Debug\net6.0-windows\MiniProjeto.MDIPrincipal.resources

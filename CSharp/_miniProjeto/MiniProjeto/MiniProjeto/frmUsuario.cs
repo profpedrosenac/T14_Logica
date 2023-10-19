@@ -42,7 +42,8 @@ namespace MiniProjeto
 
         private void btoSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+            this.Close();
         }
 
         private void btoLimpar_Click(object sender, EventArgs e)
