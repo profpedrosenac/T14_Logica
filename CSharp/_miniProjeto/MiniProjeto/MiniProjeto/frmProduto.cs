@@ -36,11 +36,7 @@ namespace MiniProjeto
             txtID.Focus();
         }
 
-        string stringConexao = "" +
-            "Data Source=localhost;" +
-            "Initial Catalog=t14_estoque;" +
-            "User ID=sa;" +
-            "Password=123456";
+        string stringConexao = MDIPrincipal.stringConexao;
 
         private void TestarConexao()
         {

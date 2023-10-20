@@ -12,7 +12,16 @@ namespace MiniProjeto
 {
     public partial class MDIPrincipal : Form
     {
-        private int childFormNumber = 0;
+        public static string stringConexao = "" +
+            "Data Source=localhost;" +
+            "Initial Catalog=t14_estoque;" +
+            "User ID=sa;" +
+            "Password=123456";
+
+        public static string idUsuario;
+        public static string nomeUsuario;
+        public static string loginUsuario;
+
 
         public MDIPrincipal()
         {
@@ -21,7 +30,8 @@ namespace MiniProjeto
 
         private void MDIPrincipal_Load(object sender, EventArgs e)
         {
-
+            frmLogin frm = new frmLogin();
+            frm.ShowDialog();
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
