@@ -25,3 +25,4 @@ C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\obj\Debug\net6.0-wi
 C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\obj\Debug\net6.0-windows\MiniProjeto.frmProduto.resources
 C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\obj\Debug\net6.0-windows\MiniProjeto.MDIPrincipal.resources
 C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\obj\Debug\net6.0-windows\MiniProjeto.frmLogin.resources
+C:\Users\pedro.lhjunior\source\repos\MiniProjeto\MiniProjeto\obj\Debug\net6.0-windows\MiniProjeto.frmRelacionamento.resources

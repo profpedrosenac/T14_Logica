@@ -103,6 +103,7 @@
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(410, 36);
             this.txtSenha.TabIndex = 1;
+            this.txtSenha.Text = "123";
             // 
             // txtLogin
             // 
@@ -110,6 +111,7 @@
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(410, 36);
             this.txtLogin.TabIndex = 0;
+            this.txtLogin.Text = "admin";
             // 
             // label2
             // 
