@@ -51,9 +51,14 @@
             this.btoExcluir = new System.Windows.Forms.Button();
             this.btoLimpar = new System.Windows.Forms.Button();
             this.btoSair = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dataGridUsuario = new System.Windows.Forms.DataGridView();
+            this.txtNomePesquisa = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -282,11 +287,42 @@
             this.btoSair.UseVisualStyleBackColor = true;
             this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.dataGridUsuario);
+            this.groupBox4.Controls.Add(this.txtNomePesquisa);
+            this.groupBox4.Location = new System.Drawing.Point(820, 12);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(600, 579);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            // 
+            // dataGridUsuario
+            // 
+            this.dataGridUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridUsuario.Location = new System.Drawing.Point(6, 68);
+            this.dataGridUsuario.Name = "dataGridUsuario";
+            this.dataGridUsuario.ReadOnly = true;
+            this.dataGridUsuario.RowTemplate.Height = 25;
+            this.dataGridUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridUsuario.Size = new System.Drawing.Size(588, 505);
+            this.dataGridUsuario.TabIndex = 1;
+            this.dataGridUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridUsuario_CellClick);
+            // 
+            // txtNomePesquisa
+            // 
+            this.txtNomePesquisa.Location = new System.Drawing.Point(6, 26);
+            this.txtNomePesquisa.Name = "txtNomePesquisa";
+            this.txtNomePesquisa.Size = new System.Drawing.Size(588, 36);
+            this.txtNomePesquisa.TabIndex = 0;
+            this.txtNomePesquisa.TextChanged += new System.EventHandler(this.txtNomePesquisa_TextChanged);
+            // 
             // frmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(826, 603);
+            this.ClientSize = new System.Drawing.Size(1432, 603);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -301,6 +337,9 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,5 +369,8 @@
         private Button btoExcluir;
         private Button btoLimpar;
         private Button btoSair;
+        private GroupBox groupBox4;
+        private DataGridView dataGridUsuario;
+        private TextBox txtNomePesquisa;
     }
 }

@@ -57,6 +57,38 @@ namespace MiniProjeto
         private void frmUsuario_Load(object sender, EventArgs e)
         {
             TestarConexao();
+            carregarDataGridUsuario();
+        }
+
+        private void carregarDataGridUsuario()
+        {
+            string sql = "select id_usuario as 'ID', nome_usuario as 'Nome', " +
+                "login_usuario as 'Login', status_usuario as 'Status' from usuario " +
+                "where nome_usuario like '%"+ txtNomePesquisa.Text+"%'";
+
+            SqlConnection conexao = new SqlConnection(stringConexao);
+            SqlDataAdapter ad = new SqlDataAdapter(sql, conexao);
+            DataSet ds = new DataSet();
+
+            conexao.Open();
+
+            try
+            {
+                ad.Fill(ds);
+
+                dataGridUsuario.DataSource = ds.Tables[0];
+                dataGridUsuario.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+                dataGridUsuario.AutoResizeRow(0, DataGridViewAutoSizeRowMode.AllCellsExceptHeader);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro, " + ex.ToString());
+            }
+            finally
+            {
+                conexao.Close();
+            }
         }
 
         private void btoCadastrar_Click(object sender, EventArgs e)
@@ -215,6 +247,17 @@ namespace MiniProjeto
             {
                 conexao.Close();
             }
+        }
+
+        private void dataGridUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCodigo.Text = dataGridUsuario.CurrentRow.Cells["ID"].Value.ToString();
+            botPesquisar.PerformClick();
+        }
+
+        private void txtNomePesquisa_TextChanged(object sender, EventArgs e)
+        {
+            carregarDataGridUsuario();
         }
     }
 }
