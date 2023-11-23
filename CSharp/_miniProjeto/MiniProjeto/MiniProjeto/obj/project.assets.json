@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedro.lhjunior\\source\\repos\\MiniProjeto\\MiniProjeto\\MiniProjeto.csproj",
+      "projectUniqueName": "D:\\T14_Logica\\CSharp\\_miniProjeto\\MiniProjeto\\MiniProjeto\\MiniProjeto.csproj",
       "projectName": "MiniProjeto",
-      "projectPath": "C:\\Users\\pedro.lhjunior\\source\\repos\\MiniProjeto\\MiniProjeto\\MiniProjeto.csproj",
+      "projectPath": "D:\\T14_Logica\\CSharp\\_miniProjeto\\MiniProjeto\\MiniProjeto\\MiniProjeto.csproj",
       "packagesPath": "C:\\Users\\pedro.lhjunior\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedro.lhjunior\\source\\repos\\MiniProjeto\\MiniProjeto\\obj\\",
+      "outputPath": "D:\\T14_Logica\\CSharp\\_miniProjeto\\MiniProjeto\\MiniProjeto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

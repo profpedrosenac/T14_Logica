@@ -1,0 +1,26 @@
+body{
+    font-family: arial;
+    background-color: black;
+    color: ghostwhite;
+    background-image: url('img/toto_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+    background-attachment: fixed;
+    margin-left: 400px;
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: right;
+}
+.textura{
+    background-image: url('img/textura.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.margemImg{
+    margin: 10px;
+}

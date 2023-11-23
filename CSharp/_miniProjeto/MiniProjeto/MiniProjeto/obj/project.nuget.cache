@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rXNuyLs+2bfhpf3t41m7rztbyqr6jkWKaIqqn/802HTE3xQ8nwxC2uTc9TaVqKZ3tjg9SFxUGRKU0DUj+96gWg==",
+  "dgSpecHash": "oM1aEKRF5EwJDH25C2CXkIzXTJgcsSIvPZKJSJWCyX4lMgVz489PDyzaRegOk01OaQ5fEs98SBpTPMxvZXXV/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pedro.lhjunior\\source\\repos\\MiniProjeto\\MiniProjeto\\MiniProjeto.csproj",
+  "projectFilePath": "D:\\T14_Logica\\CSharp\\_miniProjeto\\MiniProjeto\\MiniProjeto\\MiniProjeto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro.lhjunior\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\pedro.lhjunior\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
