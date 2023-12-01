@@ -1,0 +1,45 @@
+*{
+    font-family: arial;
+}
+body{
+    margin: 0px;
+}
+#topo{
+    width: 1300px;
+    height: 125px;
+    background-color: cadetblue;
+    margin: auto;
+    padding-top: 25px;
+}
+#menu{
+    width: 1300px;
+    height: 70px;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#banner{
+    width: 1300px;
+    height: 300px;
+    background-color: cadetblue;
+    margin: auto;
+}
+#cont{
+    width: 1300px;
+    height: 500px;
+    background-color: aquamarine;
+    margin: auto;
+}
+#rodape{
+    width: 1300px;
+    height: 150px;
+    background-color: cadetblue;
+    margin: auto;
+}
+#logo{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: auto;
+}

@@ -1,0 +1,25 @@
+*{
+    font-family: arial;
+}
+
+.est01{
+    list-style-type: circle;
+}
+.est02{
+    list-style-type: square;
+}
+ul .amarelo{
+    background-color: yellow;
+}
+
+ol .amarelo{
+    background-color: darkkhaki;
+}
+
+.ativo{
+    background-color: lightblue;
+}
+
+a{
+    text-decoration: none;
+}
