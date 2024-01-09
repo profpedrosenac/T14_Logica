@@ -1,0 +1,60 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+.divisao{
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    text-align: center;
+    line-height: 200px;
+    position: absolute;
+    font-size: 18pt;
+}
+
+#div01{
+    top: 25px;
+    left: 25px;
+}
+#div02{
+    top: 25px;
+    right: 25px;
+}
+#div03{
+    left: 25px;
+    bottom: 25px;
+}
+#div04{
+    right: 25px;
+    bottom: 25px;
+}
+#div05{
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#total{
+    width: 1000px;
+    height: 2000px;
+    background-color: deeppink;
+    margin: auto;
+    position: relative;
+}
+
+#voltar{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: aqua;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
