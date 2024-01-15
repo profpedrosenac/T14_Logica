@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container p-0">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Logo</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>  
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Link</a></li>
+                              <li><a class="dropdown-item" href="#">Another link</a></li>
+                              <li><a class="dropdown-item" href="#">A third link</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-secondary" id="topo"></div>
+        </div>
+    </div>
+
+    <div class="container p-0">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner01.png" alt="Banner 01" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                <h3>Banner 01</h3>
+                <p>We had such a great time in LA!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner02.png" alt="Banner 02" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                <h3>Banner 02</h3>
+                <p>Thank you, Chicago!</p>
+                </div> 
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner03.png" alt="Banner 03" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                <h3>Banner 03</h3>
+                <p>We love the Big Apple!</p>
+                </div>  
+            </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+    </div>
+    
+    
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
