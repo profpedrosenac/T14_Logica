@@ -1,0 +1,15 @@
+Projeto Integrador:
+
+2 sites
+Documentação 
+  Wireframe baixa
+  Wireframe alta
+
+- estatico
+  - Site da empresa que presta o serviço
+
+- dinamico (cms)
+  - Cliente
+
+Site institucional.
+Apresentação comercial no dia 05/02/2024
