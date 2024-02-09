@@ -1,0 +1,15 @@
+Desafio 01
+ criar um sistema que leia 4 valores numéricos inteiro
+ Imprimir a ordem crescente destes valores.
+
+Desafio 02
+ Criar um sistema que faça a validação de dados de uma tela de cadastro de clientes
+ID, nome, data nascimento, rua, numero, complemento, cep, bairro, cidade, estado, pais, observação, status
+
+Não apagar os dados caso o valor não seja preenchido
+
+-------------------------
+Nome e sobrenome
+calculadora
+média
+mercado
