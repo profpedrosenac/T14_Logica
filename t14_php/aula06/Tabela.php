@@ -66,7 +66,7 @@
                     </tfoot>
                 </table>
             </div>
-            <form action="repeticao.php" class="form-control" method="post">
+            <form action="tabela.php" class="form-control" method="post">
                 <div class="row">
                     <div class="col-sm-12">
                         <p>
