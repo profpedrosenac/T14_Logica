@@ -11,6 +11,13 @@
 <body>
     <?php 
         $mensagem="";
+        $ID="";
+        $Nome="";
+        $Login="";
+        $Senha="";
+        $Data="";
+        $Obs="";
+        $Status="";
         include_once('usuario_pesquisar.php');
         include_once('usuario_cadastrar.php');
         include_once('usuario_alterar.php');

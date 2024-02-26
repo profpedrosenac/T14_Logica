@@ -1,22 +1,27 @@
 <?php
 
-$ID="";
-$Nome="";
-$Login="";
-$Senha="";
-$Data="";
-$Obs="";
-$Status="";
 
 
-if(isset($_POST['btoPesquisar']))
+
+if(isset($_POST['btoPesquisar']) or isset($_GET['IDUsuario']))
 {
 
     include_once('conexao.php');
 
+    $idUsuario="";
+
+    if(isset($_POST['btoPesquisar']))
+    {
+        $idUsuario=$_POST['txtID'];
+    }
+    elseif(isset($_GET['IDUsuario']))
+    {
+        $idUsuario=$_GET['IDUsuario'];
+    }
+
     try
     {
-        $sql = $conn->query('select * from usuario where id_usuario='.$_POST['txtID']);
+        $sql = $conn->query('select * from usuario where id_usuario='.$idUsuario);
 
         if($sql->rowCount()>0)
         {
