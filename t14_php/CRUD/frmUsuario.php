@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Usuários</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/bootstrap.js"></script>
-</head>
-<body>
+
     <?php 
         $mensagem="";
         $ID="";
@@ -46,7 +36,7 @@
                         &nbsp;
                     </p>
                     <p>
-                        <button class="btn btn-primary" formaction="frmUsuario.php" name="btoPesquisar">&#128269;</button>
+                        <button class="btn btn-primary" formaction="sistema.php?tela=usuario" name="btoPesquisar">&#128269;</button>
                     </p>
                 </div>
                 <div class="col-sm-3"></div>
@@ -111,10 +101,10 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 text-end">
-                    <button class="btn btn-primary" formaction="frmUsuario.php" name="btoCadastrar">Cadastrar</button>
-                    <button class="btn btn-success" formaction="frmUsuario.php" name="btoAlterar">Alterar</button>
-                    <a href="frmUsuario.php" class="btn btn-dark">Limpar</a>
-                    <button class="btn btn-danger" formaction="frmUsuario.php" name="btoExcluir">Excluir</button>
+                    <button class="btn btn-primary" formaction="sistema.php?tela=usuario" name="btoCadastrar">Cadastrar</button>
+                    <button class="btn btn-success" formaction="sistema.php?tela=usuario" name="btoAlterar">Alterar</button>
+                    <a href="sistema.php?tela=usuario" class="btn btn-dark">Limpar</a>
+                    <button class="btn btn-danger" formaction="sistema.php?tela=usuario" name="btoExcluir">Excluir</button>
                 </div>
             </div>
         </form>
@@ -124,5 +114,3 @@
             </div>
         </div>
     </div>
-</body>
-</html>

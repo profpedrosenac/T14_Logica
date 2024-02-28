@@ -24,7 +24,7 @@ if(isset($_POST['btoCadastrar']))
             $mensagem = '<p>Cadastro realizado com sucesso</p> - '.$sql->rowCount();
             $mensagem = $mensagem.'<p>ID Gerado:'.$conn->lastInsertId().'</p>';
             echo "<script>Dados cadastrados com sucesso</script>";
-            header("Location:frmUsuario.php?IDUsuario=".$conn->lastInsertId());
+            header("Location:sistema.php?tela=usuario&IDUsuario=".$conn->lastInsertId());
         }
     } 
     catch (PDOException $erro) {

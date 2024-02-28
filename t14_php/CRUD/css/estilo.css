@@ -1,0 +1,15 @@
+.itemMenu{
+    height: 70px;
+    margin-top: 10px;
+    background-color: gainsboro;
+    line-height: 70px;
+    font-size: 16pt;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+}
+
+.itemMenu:hover{
+    background-color: lightslategrey;
+}
