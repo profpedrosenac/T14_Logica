@@ -13,3 +13,8 @@ a{
 .itemMenu:hover{
     background-color: lightslategrey;
 }
+
+#login{
+    max-width: 500px;
+    margin: auto;
+}
