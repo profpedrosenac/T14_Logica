@@ -35,6 +35,7 @@ if(isset($_POST['btoPesquisar']) or isset($_GET['IDUsuario']))
                 $Data = substr($Data, 0, 10);
                 $Obs=$linha[5];
                 $Status=$linha[6];
+                $Img=$linha[7];
             }
         }else{
             echo '<script>alert("Usuário não encontrado")</script>';

@@ -8,6 +8,7 @@
         $Data="";
         $Obs="";
         $Status="";
+        $Img="";
         include_once('usuario_pesquisar.php');
         include_once('usuario_cadastrar.php');
         include_once('usuario_alterar.php');
@@ -21,7 +22,7 @@
                 <hr>
             </div>
         </div>
-        <form action="" class="form-control" method="post">
+        <form action="" class="form-control" method="post" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-sm-3">
                     <p>
@@ -50,12 +51,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-8">
                     <p>
                         <label for="txtNome">Nome</label>
                     </p>
                     <p>
                         <input type="text" name="txtNome" id="txtNome" class="form-control" value="<?=$Nome?>">
+                    </p> 
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <label for="txtImg">Foto Perfil</label>
+                    </p>
+                    <p>
+                        <input type="file" name="txtImg" id="txtImg" class="form-control" value="<?=$Img?>">
                     </p> 
                 </div>
             </div>
@@ -90,13 +99,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-8">
                     <p>
                         <label for="txtObs">Observação</label>
                     </p>
                     <p>
                         <textarea name="txtObs" id="txtObs" rows="5" class="form-control"><?=$Obs?></textarea>
                     </p> 
+                </div>
+                <div class="col-sm-4">
+                    <img src="imagens/<?=$idUsuario?>/<?=$Img?>" alt="" class="w-100">
                 </div>
             </div>
             <div class="row">

@@ -20,4 +20,6 @@ insert into usuario
 	values
     ('Administrador','admin','123','sem obs')
     
-    
+ALTER TABLE usuario ADD img_usuario VARCHAR(100) NOT NULL AFTER status_usuario; 
+
+update usuario set img_usuario = '' where id_usuario >=1
