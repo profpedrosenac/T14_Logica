@@ -1,18 +1,21 @@
 <?php
 
 
-
-
-if(isset($_POST['btoPesquisar']) or isset($_GET['IDUsuario']))
+if($_POST or $_GET)
+{
+if(isset($_POST['txtAcao']) or isset($_GET['IDUsuario']))
 {
 
     include_once('conexao.php');
 
     $idUsuario="";
 
-    if(isset($_POST['btoPesquisar']))
+    if(isset($_POST['txtAcao']))
     {
-        $idUsuario=$_POST['txtID'];
+        if($_POST['txtAcao']=='Pesquisar')
+        {
+            $idUsuario=$_POST['txtID'];
+        }
     }
     elseif(isset($_GET['IDUsuario']))
     {
@@ -47,5 +50,6 @@ if(isset($_POST['btoPesquisar']) or isset($_GET['IDUsuario']))
     {
         echo $erro->getMessage();
     }   
+}
 }
 ?>

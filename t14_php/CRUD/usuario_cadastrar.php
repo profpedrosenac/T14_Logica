@@ -1,6 +1,7 @@
 <?php
-
-if(isset($_POST['btoCadastrar']))
+if($_POST)
+{
+if($_POST['txtAcao']=='Cadastrar')
 {
 
     include_once('conexao.php');
@@ -47,7 +48,7 @@ if(isset($_POST['btoCadastrar']))
         echo $erro->getMessage();
     }
 }
-
+}
 
  
 ?>

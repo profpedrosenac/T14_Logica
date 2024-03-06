@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm 12">
+                <h1>Trabalhando com JS</h1>
+            </div>
+        </div>
+
+        <form action="" onsubmit="return false;" id="frmForm">
+            <div class="row">
+                <div class="col-sm-12">
+                    <input type="text" name="" id="">
+                    <button onclick="mensagem2();" class="btn btn-success">Abrir mensagem</button>
+                    <button class="btn btn-success" onclick="">Botão 2</button>
+
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-sm-12">
+                <hr>
+                <h1>Nome do calango</h1>
+                <hr>
+            </div>
+        </div>
+        
+        <form action="" onsubmit="return false;" id="frmNome" class="form-control">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p><label for="txtNome"></label></p>
+                    <p><input type="text" name="txtNome" id="txtNome" class="form-control"></p>
+                    <p><button id="btoOK" name="btoOK" class="btn btn-success" onclick="Dados();">OK</button></p>
+                    <p id="mostrarDados">resultado</p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function Dados()
+        {
+            let caixa = document.getElementById("txtNome");
+            let resultado = document.getElementById("mostrarDados");
+
+            alert(resultado.innerHTML);
+            
+            resultado.innerHTML = caixa.value;
+        }
+        function mensagem1()
+        {
+            alert("Teste");
+        }
+        function mensagem2()
+        {
+            alert("Clicou no botão");
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 <?php
-
-if(isset($_POST['btoExcluir']))
+if($_POST)
+{
+if($_POST['txtAcao']=='Excluir')
 {
     include_once('conexao.php');
 
@@ -23,7 +24,7 @@ if(isset($_POST['btoExcluir']))
         echo $erro->getMessage();
     }
 }
-
+}
 
 
 ?>

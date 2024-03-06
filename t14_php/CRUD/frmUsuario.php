@@ -22,7 +22,7 @@
                 <hr>
             </div>
         </div>
-        <form action="" class="form-control" method="post" enctype="multipart/form-data">
+        <form action="" class="form-control" method="post" enctype="multipart/form-data" onsubmit="return false;" name="frmUsuario" id="frmUsuario">
             <div class="row">
                 <div class="col-sm-3">
                     <p>
@@ -37,7 +37,7 @@
                         &nbsp;
                     </p>
                     <p>
-                        <button class="btn btn-primary" formaction="sistema.php?tela=usuario" name="btoPesquisar">&#128269;</button>
+                        <button class="btn btn-primary" formaction="sistema.php?tela=usuario" name="btoPesquisar "onclick="Enviar('Pes')">&#128269;</button>
                     </p>
                 </div>
                 <div class="col-sm-3"></div>
@@ -113,12 +113,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 text-end">
-                    <button class="btn btn-primary" formaction="sistema.php?tela=usuario" name="btoCadastrar">Cadastrar</button>
-                    <button class="btn btn-success" formaction="sistema.php?tela=usuario" name="btoAlterar">Alterar</button>
+                    <button class="btn btn-primary" formaction="sistema.php?tela=usuario" name="btoCadastrar" onclick="Enviar('Cad')">Cadastrar</button>
+                    <button class="btn btn-success" formaction="sistema.php?tela=usuario" name="btoAlterar" onclick="Enviar('Alt')">Alterar</button>
                     <a href="sistema.php?tela=usuario" class="btn btn-dark">Limpar</a>
-                    <button class="btn btn-danger" formaction="sistema.php?tela=usuario" name="btoExcluir">Excluir</button>
+                    <button class="btn btn-danger" formaction="sistema.php?tela=usuario" name="btoExcluir" onclick="Enviar('Exc')">Excluir</button>
                 </div>
             </div>
+            <input type="text" name="txtAcao" id="txtAcao" style="display: none;">
         </form>
         <div class="row">
             <div class="col-sm-12">
@@ -126,3 +127,83 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const id = document.getElementById("txtID");
+        const nome = document.getElementById("txtNome");
+        const login = document.getElementById("txtLogin");
+        const senha = document.getElementById("txtSenha");
+        const status = document.getElementById("txtStatus");
+        const obs = document.getElementById("txtObs");
+        const img = document.getElementById("txtImg");
+        const dataCad = document.getElementById("txtData");
+        const acao = document.getElementById("txtAcao");
+        const caminho = "sistema.php?tela=usuario";
+        const formulario = document.getElementById("frmUsuario");
+
+        function Enviar(tipo)
+        {
+            console.log(tipo);
+
+            if(tipo == "Pes")
+            {
+                acao.value='Pesquisar'
+
+                if(id.value=="")
+                {
+                    alert ("Valor do ID deve ser preenchido")
+                    id.focus()
+                    return;
+                }
+
+                formulario.action=caminho
+                formulario.submit()
+            }
+
+            if(tipo == "Exc")
+            {
+                acao.value='Excluir'
+
+                if(id.value=="")
+                {
+                    alert ("Valor do ID deve ser preenchido")
+                    id.focus()
+                    return;
+                }
+
+                formulario.action=caminho
+                formulario.submit()
+            }
+
+            if(tipo == "Alt")
+            {
+                acao.value='Alterar'
+
+                if(id.value=="")
+                {
+                    alert ("Valor do ID deve ser preenchido")
+                    id.focus()
+                    return;
+                }
+
+                formulario.action=caminho
+                formulario.submit()
+            }
+
+            if(tipo == "Cad")
+            {
+                acao.value='Cadastrar'
+
+                if(nome.value=="")
+                {
+                    alert ("Valor do Nome deve ser preenchido")
+                    nome.focus()
+                    return;
+                }
+
+                formulario.action=caminho
+                formulario.submit()
+            }
+            console.log(acao.value)
+        }
+    </script>
