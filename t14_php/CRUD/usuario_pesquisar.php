@@ -9,21 +9,27 @@ if(isset($_POST['txtAcao']) or isset($_GET['IDUsuario']))
     include_once('conexao.php');
 
     $idUsuario="";
-
+    
     if(isset($_POST['txtAcao']))
     {
         if($_POST['txtAcao']=='Pesquisar')
         {
             $idUsuario=$_POST['txtID'];
         }
+        else
+        {
+            return;
+        }
     }
     elseif(isset($_GET['IDUsuario']))
-    {
+    {        
         $idUsuario=$_GET['IDUsuario'];
     }
 
     try
     {
+        
+
         $sql = $conn->query('select * from usuario where id_usuario='.$idUsuario);
 
         if($sql->rowCount()>0)
