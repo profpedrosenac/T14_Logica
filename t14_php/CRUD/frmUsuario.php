@@ -126,8 +126,15 @@
                 <?= $mensagem ?>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+            <hr>
+            <?php include_once('usuario_tabela.php'); ?>
+            <hr>
+            </div>
+        </div>
     </div>
-
+    
     <script>
         const id = document.getElementById("txtID");
         const nome = document.getElementById("txtNome");
