@@ -20,6 +20,10 @@ insert into usuario
 	values
     ('Administrador','admin','123','sem obs')
     
-ALTER TABLE usuario ADD img_usuario VARCHAR(100) NOT NULL AFTER status_usuario; 
-
-update usuario set img_usuario = '' where id_usuario >=1
+    
+insert into usuario
+(nome_usuario,login_usuario,senha_usuario,obs_usuario)
+values
+(:nome_usuario,:login_usuario,:senha_usuario,:obs_usuario)
+    
+    
